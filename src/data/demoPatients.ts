@@ -1,0 +1,228 @@
+import { PatientRecord, AdditionalMeasurementOption } from '@/types';
+
+export const DEMO_PATIENTS: PatientRecord[] = [
+  {
+    id: 'pat-synth-001',
+    referenceId: 'NHANES-SYNTH-8841',
+    age: 58,
+    sex: 'Male',
+    smokingStatus: 'Current',
+    packYears: 32,
+    symptoms: {
+      chronicCough: true,
+      dyspneaOnExertion: true,
+      wheezing: true,
+      sputumProduction: true,
+      chestTightness: false,
+    },
+    medicalHistory: {
+      asthmaHistory: false,
+      allergies: false,
+      occupationalExposure: true,
+      recurrentInfections: true,
+    },
+    vitals: {
+      restingHeartRate: 78,
+      respiratoryRate: 18,
+      bmi: 27.4,
+      oxygenSaturation: 94,
+    },
+    measurements: {
+      fev1Litres: 1.82,
+      fvcLitres: 3.10,
+      fev1FvcRatio: 0.587, // < 0.70 typical obstructive threshold
+      peakExpiratoryFlow: 340,
+    },
+    assessmentDate: '2026-11-15T09:30:00Z',
+    screeningResult: 'HIGH_RISK_OBSTRUCTION',
+    calibratedProbability: 0.89,
+    uncertaintyScore: 0.14,
+    decisionOutcome: 'SCREENING_CONFIRMED',
+    inferenceModeUsed: 'CLOUD',
+    syncStatus: 'SYNCED',
+    reviewStatus: 'PRELIMINARY_COMPLETE',
+    notes: 'Classic obstructive spirometry pattern with significant smoking history and occupational particulate exposure.',
+  },
+  {
+    id: 'pat-synth-002',
+    referenceId: 'NHANES-SYNTH-9214',
+    age: 46,
+    sex: 'Female',
+    smokingStatus: 'Former',
+    packYears: 12,
+    symptoms: {
+      chronicCough: true,
+      dyspneaOnExertion: true,
+      wheezing: false,
+      sputumProduction: false,
+      chestTightness: true,
+    },
+    medicalHistory: {
+      asthmaHistory: true,
+      allergies: true,
+      occupationalExposure: false,
+      recurrentInfections: false,
+    },
+    vitals: {
+      restingHeartRate: 72,
+      respiratoryRate: 16,
+      bmi: 24.1,
+      oxygenSaturation: 97,
+    },
+    measurements: {
+      fev1Litres: 2.35,
+      fvcLitres: 3.32,
+      fev1FvcRatio: 0.708, // Borderline near 0.70 cut-off!
+      peakExpiratoryFlow: 410,
+    },
+    assessmentDate: '2026-11-16T11:15:00Z',
+    screeningResult: 'MODERATE_RISK',
+    calibratedProbability: 0.56,
+    uncertaintyScore: 0.44, // Moderate uncertainty -> calls for additional test
+    decisionOutcome: 'ACQUISITION_REQUIRED',
+    inferenceModeUsed: 'EDGE',
+    syncStatus: 'SYNCED',
+    reviewStatus: 'PENDING_PHYSICIAN_REVIEW',
+    notes: 'Borderline ratio near 0.70. Clinical ambiguity between mild fixed obstruction and reversible asthma. Additional post-BD testing recommended.',
+  },
+  {
+    id: 'pat-synth-003',
+    referenceId: 'NHANES-SYNTH-4078',
+    age: 69,
+    sex: 'Male',
+    smokingStatus: 'Never',
+    packYears: 0,
+    symptoms: {
+      chronicCough: true,
+      dyspneaOnExertion: true,
+      wheezing: false,
+      sputumProduction: false,
+      chestTightness: true,
+    },
+    medicalHistory: {
+      asthmaHistory: false,
+      allergies: false,
+      occupationalExposure: true, // Silica / asbestos quarrying
+      recurrentInfections: false,
+    },
+    vitals: {
+      restingHeartRate: 88,
+      respiratoryRate: 22,
+      bmi: 19.8,
+      oxygenSaturation: 91,
+    },
+    measurements: {
+      fev1Litres: 1.45,
+      fvcLitres: 1.62,
+      fev1FvcRatio: 0.895, // High ratio with severely reduced FVC - atypical restrictive pattern!
+      peakExpiratoryFlow: 290,
+    },
+    assessmentDate: '2026-11-16T14:40:00Z',
+    screeningResult: 'INCONCLUSIVE',
+    calibratedProbability: 0.48,
+    uncertaintyScore: 0.82, // High epistemic uncertainty
+    decisionOutcome: 'ABSTAIN_REFERRAL',
+    inferenceModeUsed: 'OFFLINE',
+    syncStatus: 'PENDING_SYNC',
+    reviewStatus: 'FLAGGED_FOR_AUDIT',
+    notes: 'Severe volume reduction with preserved ratio. AI abstention triggered due to suspected restrictive or parenchymal pathology outside screening domain.',
+  },
+  {
+    id: 'pat-synth-004',
+    referenceId: 'NHANES-SYNTH-1102',
+    age: 34,
+    sex: 'Female',
+    smokingStatus: 'Never',
+    packYears: 0,
+    symptoms: {
+      chronicCough: false,
+      dyspneaOnExertion: false,
+      wheezing: false,
+      sputumProduction: false,
+      chestTightness: false,
+    },
+    medicalHistory: {
+      asthmaHistory: false,
+      allergies: false,
+      occupationalExposure: false,
+      recurrentInfections: false,
+    },
+    vitals: {
+      restingHeartRate: 68,
+      respiratoryRate: 14,
+      bmi: 22.3,
+      oxygenSaturation: 99,
+    },
+    measurements: {
+      fev1Litres: 3.12,
+      fvcLitres: 3.75,
+      fev1FvcRatio: 0.832,
+      peakExpiratoryFlow: 490,
+    },
+    assessmentDate: '2026-11-17T08:10:00Z',
+    screeningResult: 'LOW_RISK',
+    calibratedProbability: 0.06,
+    uncertaintyScore: 0.08,
+    decisionOutcome: 'SCREENING_CONFIRMED',
+    inferenceModeUsed: 'EDGE',
+    syncStatus: 'SYNCED',
+    reviewStatus: 'PRELIMINARY_COMPLETE',
+    notes: 'Healthy control profile. Normal spirometry parameters well within reference bounds.',
+  }
+];
+
+export const AVAILABLE_MEASUREMENT_OPTIONS: AdditionalMeasurementOption[] = [
+  {
+    id: 'post_bd_ratio',
+    name: 'Post-Bronchodilator Spirometry Ratio',
+    shortCode: 'Post-BD FEV1/FVC',
+    category: 'PULMONARY_FUNCTION',
+    unit: 'ratio',
+    typicalCostScale: 'MODERATE',
+    timeRequiredMinutes: 15,
+    informationGainExpected: 0.84,
+    clinicalRationale: 'Distinguishes reversible airway hyperresponsiveness (asthma) from fixed airflow obstruction (COPD). High diagnostic value for borderline ratios (0.65–0.72).',
+    applicabilityCriteria: 'Recommended when pre-bronchodilator ratio is borderline or asthma/COPD overlap is suspected.',
+    standardReferenceRange: 'Post-BD FEV1/FVC < 0.70 defines persistent airflow limitation (GOLD guidelines).'
+  },
+  {
+    id: 'feno_test',
+    name: 'Fractional Exhaled Nitric Oxide',
+    shortCode: 'FeNO (ppb)',
+    category: 'POINT_OF_CARE_LAB',
+    unit: 'ppb',
+    typicalCostScale: 'MODERATE',
+    timeRequiredMinutes: 5,
+    informationGainExpected: 0.68,
+    clinicalRationale: 'Non-invasive biomarker of eosinophilic type-2 airway inflammation. Differentiates allergic inflammatory phenotypes.',
+    applicabilityCriteria: 'Useful in patients with cough/wheeze and high atopic history.',
+    standardReferenceRange: '< 25 ppb normal; > 50 ppb indicates active eosinophilic inflammation.'
+  },
+  {
+    id: 'spo2_exertion',
+    name: 'Exertional Pulse Oximetry (6MWT SpO2)',
+    shortCode: 'Desat %',
+    category: 'PHYSIOLOGICAL',
+    unit: '%',
+    typicalCostScale: 'MINIMAL',
+    timeRequiredMinutes: 8,
+    informationGainExpected: 0.52,
+    clinicalRationale: 'Measures exercise-induced oxygen desaturation, revealing subclinical gas-exchange impairment even with mild spirometric changes.',
+    applicabilityCriteria: 'Indicated for patients reporting exertional dyspnea with near-normal resting SpO2.',
+    standardReferenceRange: 'Desaturation >= 4% or absolute drop < 90% is clinically significant.'
+  },
+  {
+    id: 'peak_flow_variability',
+    name: 'Diurnal Peak Flow Variability (PEF)',
+    shortCode: 'PEF Var %',
+    category: 'PULMONARY_FUNCTION',
+    unit: '%',
+    typicalCostScale: 'LOW',
+    timeRequiredMinutes: 10,
+    informationGainExpected: 0.45,
+    clinicalRationale: 'Documents excessive diurnal airway caliber variability characteristic of reactive airways disease.',
+    applicabilityCriteria: 'Appropriate when spirometry cannot be repeated immediately or home monitoring is needed.',
+    standardReferenceRange: 'Diurnal variability > 20% supports variable airflow limitation.'
+  }
+];
+

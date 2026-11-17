@@ -1,0 +1,293 @@
+{
+  "dataset_validation": {
+    "total_rows": 30442,
+    "total_unique_seqn": 30442,
+    "seqn_is_unique": true,
+    "seqn_has_no_nulls": true,
+    "rows_represent_all_demo": true,
+    "by_cycle": {
+      "F": 10537,
+      "E": 10149,
+      "G": 9756
+    },
+    "missing_spirometry_distinguishable": {
+      "not_examined_or_ineligible": 7009,
+      "spirometry_not_done": 1779,
+      "safety_exclusion": 1342,
+      "attempted_spirometry": 20312,
+      "missing_target_count": 11421
+    }
+  },
+  "quality_control": {
+    "SPXNSTAT": {
+      "1.0": 19104,
+      "nan": 7009,
+      "3.0": 1779,
+      "4.0": 1342,
+      "2.0": 1208
+    },
+    "SPXNQFVC": {
+      "A": 13315,
+      "nan": 10129,
+      "B": 4171,
+      "C": 1718,
+      "D": 759,
+      "F": 350
+    },
+    "SPXNQFV1": {
+      "A": 14097,
+      "nan": 10129,
+      "B": 4112,
+      "C": 1259,
+      "D": 561,
+      "F": 284
+    }
+  },
+  "cohort_flow_reconciliation": {
+    "cohort_age_18": {
+      "min_age": 18,
+      "original_demo": 18619,
+      "examined_mec": 18619,
+      "spirometry_assigned": 16859,
+      "spirometry_attempted": 14348,
+      "strict_qc_AB": 12301,
+      "expanded_qc_ABC": 13657,
+      "valid_lln_outcome": 12301,
+      "valid_fixed_outcome": 12301,
+      "final_complete_case_cohort": 7101,
+      "complete_case_retention_pct": 57.72701406389724,
+      "temporal_train_EF": 4908,
+      "temporal_test_G": 2193,
+      "temporal_sum_reconciles": true
+    },
+    "cohort_age_40": {
+      "min_age": 40,
+      "original_demo": 11763,
+      "examined_mec": 11763,
+      "spirometry_assigned": 10219,
+      "spirometry_attempted": 8481,
+      "strict_qc_AB": 7144,
+      "expanded_qc_ABC": 8002,
+      "valid_lln_outcome": 7144,
+      "valid_fixed_outcome": 7144,
+      "final_complete_case_cohort": 7101,
+      "complete_case_retention_pct": 99.39809630459126,
+      "temporal_train_EF": 4908,
+      "temporal_test_G": 2193,
+      "temporal_sum_reconciles": true
+    }
+  },
+  "target_analysis_strict_qc_7144": {
+    "N": 7144,
+    "fixed_pos": 1332,
+    "fixed_prev_unweighted": 0.1864501679731243,
+    "fixed_prev_weighted": 0.19721931852594535,
+    "fixed_se_weighted": 0.008037443938720912,
+    "lln_pos": 938,
+    "lln_prev_unweighted": 0.1312989921612542,
+    "lln_prev_weighted": 0.138103104398452,
+    "lln_se_weighted": 0.005466485939768043,
+    "concordant_normal": 5762,
+    "concordant_obstructed": 888,
+    "fixed_pos_lln_neg_elderly_overdiag": 444,
+    "fixed_neg_lln_pos_young_underdiag": 50,
+    "raw_agreement": 0.9308510638297872,
+    "cohen_kappa": 0.742737742279368
+  },
+  "target_analysis_final_model_7101": {
+    "N": 7101,
+    "fixed_pos": 1323,
+    "fixed_prev_unweighted": 0.18631178707224336,
+    "fixed_prev_weighted": 0.19728514985066692,
+    "fixed_se_weighted": 0.008008628744297168,
+    "lln_pos": 934,
+    "lln_prev_unweighted": 0.13153077031404029,
+    "lln_prev_weighted": 0.13823205032837219,
+    "lln_se_weighted": 0.005435257508173235,
+    "concordant_normal": 5728,
+    "concordant_obstructed": 884,
+    "fixed_pos_lln_neg_elderly_overdiag": 439,
+    "fixed_neg_lln_pos_young_underdiag": 50,
+    "raw_agreement": 0.93113645965357,
+    "cohen_kappa": 0.7438408633248285
+  },
+  "age_decade_discordance_final": {
+    "40-49": {
+      "N": 2183,
+      "fixed_pos": 202,
+      "fixed_prev": 0.09253321117727897,
+      "lln_pos": 237,
+      "lln_prev": 0.10856619331195602,
+      "fixed_pos_lln_neg": 12,
+      "fixed_pos_lln_neg_pct": 0.5497022446174988,
+      "fixed_neg_lln_pos": 47,
+      "fixed_neg_lln_pos_pct": 2.153000458085204
+    },
+    "50-59": {
+      "N": 1995,
+      "fixed_pos": 311,
+      "fixed_prev": 0.15588972431077694,
+      "lln_pos": 254,
+      "lln_prev": 0.12731829573934836,
+      "fixed_pos_lln_neg": 60,
+      "fixed_pos_lln_neg_pct": 3.007518796992481,
+      "fixed_neg_lln_pos": 3,
+      "fixed_neg_lln_pos_pct": 0.15037593984962408
+    },
+    "60-69": {
+      "N": 1840,
+      "fixed_pos": 433,
+      "fixed_prev": 0.23532608695652174,
+      "lln_pos": 246,
+      "lln_prev": 0.13369565217391305,
+      "fixed_pos_lln_neg": 187,
+      "fixed_pos_lln_neg_pct": 10.16304347826087,
+      "fixed_neg_lln_pos": 0,
+      "fixed_neg_lln_pos_pct": 0.0
+    },
+    "70-79": {
+      "N": 1083,
+      "fixed_pos": 377,
+      "fixed_prev": 0.3481071098799631,
+      "lln_pos": 197,
+      "lln_prev": 0.1819021237303786,
+      "fixed_pos_lln_neg": 180,
+      "fixed_pos_lln_neg_pct": 16.62049861495845,
+      "fixed_neg_lln_pos": 0,
+      "fixed_neg_lln_pos_pct": 0.0
+    }
+  },
+  "lln_comparison_hankinson_vs_gli": {
+    "comparable_N": 7114,
+    "hankinson_t6_pos": 934,
+    "gli_2012_pos": 835,
+    "mean_absolute_difference_ratio": 0.009175085279800993,
+    "max_absolute_difference_ratio": 0.03419794012857358,
+    "disagreements_count": 145,
+    "disagreements_pct": 2.0382344672476806,
+    "agreement_pct": 97.96176553275232,
+    "crosstab_hankinson_rows_gli_cols": {
+      "both_normal": 6157,
+      "hankinson_pos_gli_neg": 122,
+      "hankinson_neg_gli_pos": 23,
+      "both_obstructed": 812
+    }
+  },
+  "post_bd_detailed_flow": {
+    "total_nhanes_cohort": 30442,
+    "spirometry_examined": 23433,
+    "not_selected_for_2nd_test_SPDBRONC_2": 17543,
+    "selected_for_2nd_test_SPDBRONC_1": 2769,
+    "selected_contraindicated_SPXBSTAT_4": 608,
+    "selected_refused_or_not_done_SPXBSTAT_3": 597,
+    "albuterol_administered_attempted_SPXBSTAT_1_2": 1564,
+    "test2_usable_FEV1_FVC": 1564,
+    "test2_expanded_QC_ABC": 1555,
+    "test2_strict_QC_AB": 1430,
+    "persistent_post_bd_obstruction": 520,
+    "reversible_limitation": 1044
+  },
+  "smoking_and_pack_years_adult40_final": {
+    "Current": {
+      "N": 1406,
+      "valid_pack_years_N": 1386,
+      "valid_pack_years_pct": 98.57752489331438,
+      "mean_pack_years": 24.890187590187587
+    },
+    "Former": {
+      "N": 2056,
+      "valid_pack_years_N": 1942,
+      "valid_pack_years_pct": 94.45525291828794,
+      "mean_pack_years": 27.566220391349127
+    },
+    "Never": {
+      "N": 3635,
+      "valid_pack_years_N": 3635,
+      "valid_pack_years_pct": 100.0,
+      "mean_pack_years": 0.0
+    },
+    "Unknown": {
+      "N": 4,
+      "valid_pack_years_N": 0,
+      "valid_pack_years_pct": 0.0,
+      "mean_pack_years": 0.0
+    }
+  },
+  "spectrum_bias_comprehensive": {
+    "strict_qc_AB": {
+      "N": 7144,
+      "mean_age": 56.651175811870104,
+      "pct_female": 51.66573348264277,
+      "mean_bmi": 29.570153434684684,
+      "pct_current_smoker": 19.820828667413217,
+      "pct_wheezing": 13.39585666293393,
+      "pct_cough": 9.686450167973124,
+      "target_lln_prev": 13.129899216125422,
+      "target_fixed_prev": 18.64501679731243
+    },
+    "expanded_qc_ABC": {
+      "N": 8002,
+      "mean_age": 56.92501874531367,
+      "pct_female": 50.4123969007748,
+      "mean_bmi": 29.530172240382196,
+      "pct_current_smoker": 20.194951262184453,
+      "pct_wheezing": 13.396650837290677,
+      "pct_cough": 9.89752561859535,
+      "target_lln_prev": 13.384153961509623,
+      "target_fixed_prev": 18.957760559860034
+    },
+    "attempted_failed_strict_qc": {
+      "N": 1337,
+      "mean_age": 59.601346297681374,
+      "pct_female": 44.65220643231114,
+      "mean_bmi": 29.491825037707393,
+      "pct_current_smoker": 22.5130890052356,
+      "pct_wheezing": 14.06133133881825,
+      "pct_cough": 10.845175766641734,
+      "target_lln_prev": 14.473684210526317,
+      "target_fixed_prev": 20.476973684210524
+    },
+    "assigned_not_tested_SPXNSTAT_3_4": {
+      "N": 1738,
+      "mean_age": 60.26409666283084,
+      "pct_female": 52.64672036823935,
+      "mean_bmi": 29.76385696821516,
+      "pct_current_smoker": 21.40391254315305,
+      "pct_wheezing": 21.576524741081705,
+      "pct_cough": 15.535097813578828,
+      "target_lln_prev": 0.0,
+      "target_fixed_prev": 0.0
+    },
+    "age_80_plus_ineligible": {
+      "N": 1544,
+      "mean_age": 75.83873056994818,
+      "pct_female": 53.23834196891192,
+      "mean_bmi": 26.717433962264153,
+      "pct_current_smoker": 6.60621761658031,
+      "pct_wheezing": 9.844559585492227,
+      "pct_cough": 10.427461139896373,
+      "target_lln_prev": null,
+      "target_fixed_prev": null
+    }
+  },
+  "temporal_split_frozen_7101": {
+    "train_N": 4908,
+    "test_N": 2193,
+    "train_mean_age": 56.815810920945395,
+    "test_mean_age": 56.23620611035112,
+    "train_female_pct": 51.629991850040746,
+    "test_female_pct": 51.755585955312355,
+    "train_mean_bmi": 29.624739201303992,
+    "test_mean_bmi": 29.44628362973096,
+    "train_current_smoker_pct": 19.947025264873673,
+    "test_current_smoker_pct": 19.471044231646147,
+    "train_target_lln_pos": 679,
+    "train_target_lln_prev": 13.834555827220866,
+    "test_target_lln_pos": 255,
+    "test_target_lln_prev": 11.627906976744185,
+    "train_target_fixed_pos": 942,
+    "train_target_fixed_prev": 19.193154034229828,
+    "test_target_fixed_pos": 381,
+    "test_target_fixed_prev": 17.373461012311903
+  }
+}

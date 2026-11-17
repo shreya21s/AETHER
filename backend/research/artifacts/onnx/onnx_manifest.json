@@ -1,0 +1,86 @@
+{
+  "exported_models": {
+    "LogisticRegression_Tier_1_Only": {
+      "onnx_file": "onnx\\LogisticRegression_Tier_1_Only.onnx",
+      "quantized_file": "onnx\\LogisticRegression_Tier_1_Only_quantized.onnx",
+      "model_name": "LogisticRegression",
+      "tier": "Tier_1_Only",
+      "input_features_count": 16,
+      "file_size_kb": 0.65,
+      "quantized_size_kb": 0.76
+    },
+    "RandomForest_Tier_1_Only": {
+      "onnx_file": "onnx\\RandomForest_Tier_1_Only.onnx",
+      "quantized_file": "onnx\\RandomForest_Tier_1_Only_quantized.onnx",
+      "model_name": "RandomForest",
+      "tier": "Tier_1_Only",
+      "input_features_count": 16,
+      "file_size_kb": 1212.41,
+      "quantized_size_kb": 1212.46
+    },
+    "XGBoost_Tier_1_Only": {
+      "onnx_file": "onnx\\XGBoost_Tier_1_Only.onnx",
+      "quantized_file": null,
+      "model_name": "XGBoost",
+      "tier": "Tier_1_Only",
+      "input_features_count": 16,
+      "file_size_kb": 190.91,
+      "quantized_size_kb": null
+    },
+    "LogisticRegression_Tier_1_Plus_Tier_2": {
+      "onnx_file": "onnx\\LogisticRegression_Tier_1_Plus_Tier_2.onnx",
+      "quantized_file": "onnx\\LogisticRegression_Tier_1_Plus_Tier_2_quantized.onnx",
+      "model_name": "LogisticRegression",
+      "tier": "Tier_1_Plus_Tier_2",
+      "input_features_count": 47,
+      "file_size_kb": 0.96,
+      "quantized_size_kb": 1.07
+    },
+    "RandomForest_Tier_1_Plus_Tier_2": {
+      "onnx_file": "onnx\\RandomForest_Tier_1_Plus_Tier_2.onnx",
+      "quantized_file": "onnx\\RandomForest_Tier_1_Plus_Tier_2_quantized.onnx",
+      "model_name": "RandomForest",
+      "tier": "Tier_1_Plus_Tier_2",
+      "input_features_count": 47,
+      "file_size_kb": 1015.48,
+      "quantized_size_kb": 1015.53
+    },
+    "XGBoost_Tier_1_Plus_Tier_2": {
+      "onnx_file": "onnx\\XGBoost_Tier_1_Plus_Tier_2.onnx",
+      "quantized_file": null,
+      "model_name": "XGBoost",
+      "tier": "Tier_1_Plus_Tier_2",
+      "input_features_count": 47,
+      "file_size_kb": 189.65,
+      "quantized_size_kb": null
+    },
+    "LogisticRegression_Tier_1_2_3_Full": {
+      "onnx_file": "onnx\\LogisticRegression_Tier_1_2_3_Full.onnx",
+      "quantized_file": "onnx\\LogisticRegression_Tier_1_2_3_Full_quantized.onnx",
+      "model_name": "LogisticRegression",
+      "tier": "Tier_1_2_3_Full",
+      "input_features_count": 49,
+      "file_size_kb": 0.98,
+      "quantized_size_kb": 1.09
+    },
+    "RandomForest_Tier_1_2_3_Full": {
+      "onnx_file": "onnx\\RandomForest_Tier_1_2_3_Full.onnx",
+      "quantized_file": "onnx\\RandomForest_Tier_1_2_3_Full_quantized.onnx",
+      "model_name": "RandomForest",
+      "tier": "Tier_1_2_3_Full",
+      "input_features_count": 49,
+      "file_size_kb": 1136.0,
+      "quantized_size_kb": 1136.06
+    },
+    "XGBoost_Tier_1_2_3_Full": {
+      "onnx_file": "onnx\\XGBoost_Tier_1_2_3_Full.onnx",
+      "quantized_file": null,
+      "model_name": "XGBoost",
+      "tier": "Tier_1_2_3_Full",
+      "input_features_count": 49,
+      "file_size_kb": 187.38,
+      "quantized_size_kb": null
+    }
+  },
+  "specs": {}
+}

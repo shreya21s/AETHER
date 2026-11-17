@@ -1,0 +1,22 @@
+module,cycle,years,filename,description,url,status,size_bytes,size_kb,is_valid_sas_xpt
+SPX,E,2007-2008,SPX_E.XPT,Spirometry Examination,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SPX_E.xpt,DOWNLOADED,2841920,2775.31,True
+DEMO,E,2007-2008,DEMO_E.XPT,Demographic Variables & Survey Design,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DEMO_E.xpt,DOWNLOADED,3498080,3416.09,True
+BMX,E,2007-2008,BMX_E.XPT,"Body Measures (Height, Weight, BMI)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BMX_E.xpt,DOWNLOADED,1800240,1758.05,True
+SMQ,E,2007-2008,SMQ_E.XPT,Smoking Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SMQ_E.xpt,DOWNLOADED,2449520,2392.11,True
+RDQ,E,2007-2008,RDQ_E.XPT,"Respiratory Health Questionnaire (Cough, Wheeze, Dyspnea)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/RDQ_E.xpt,DOWNLOADED,1162800,1135.55,True
+MCQ,E,2007-2008,MCQ_E.XPT,"Medical Conditions (Asthma, Chronic Bronchitis, Emphysema)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/MCQ_E.xpt,DOWNLOADED,7127840,6960.78,True
+OCQ,E,2007-2008,OCQ_E.XPT,Occupational Exposure Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/OCQ_E.xpt,DOWNLOADED,1260960,1231.41,True
+SPX,F,2009-2010,SPX_F.XPT,Spirometry Examination,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/SPX_F.xpt,DOWNLOADED,3007360,2936.88,True
+DEMO,F,2009-2010,DEMO_F.XPT,Demographic Variables & Survey Design,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/DEMO_F.xpt,DOWNLOADED,3631600,3546.48,True
+BMX,F,2009-2010,BMX_F.XPT,"Body Measures (Height, Weight, BMI)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BMX_F.xpt,DOWNLOADED,1890560,1846.25,True
+SMQ,F,2009-2010,SMQ_F.XPT,Smoking Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/SMQ_F.xpt,DOWNLOADED,2580560,2520.08,True
+RDQ,F,2009-2010,RDQ_F.XPT,"Respiratory Health Questionnaire (Cough, Wheeze, Dyspnea)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/RDQ_F.xpt,DOWNLOADED,1216000,1187.5,True
+MCQ,F,2009-2010,MCQ_F.XPT,"Medical Conditions (Asthma, Chronic Bronchitis, Emphysema)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/MCQ_F.xpt,DOWNLOADED,6562720,6408.91,True
+OCQ,F,2009-2010,OCQ_F.XPT,Occupational Exposure Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/OCQ_F.xpt,DOWNLOADED,1216560,1188.05,True
+SPX,G,2011-2012,SPX_G.XPT,Spirometry Examination,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SPX_G.xpt,DOWNLOADED,2751120,2686.64,True
+DEMO,G,2011-2012,DEMO_G.XPT,Demographic Variables & Survey Design,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt,DOWNLOADED,3753760,3665.78,True
+BMX,G,2011-2012,BMX_G.XPT,"Body Measures (Height, Weight, BMI)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt,DOWNLOADED,1946720,1901.09,True
+SMQ,G,2011-2012,SMQ_G.XPT,Smoking Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.xpt,DOWNLOADED,1946960,1901.33,True
+RDQ,G,2011-2012,RDQ_G.XPT,"Respiratory Health Questionnaire (Cough, Wheeze, Dyspnea)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/RDQ_G.xpt,DOWNLOADED,1126560,1100.16,True
+MCQ,G,2011-2012,MCQ_G.XPT,"Medical Conditions (Asthma, Chronic Bronchitis, Emphysema)",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt,DOWNLOADED,6905520,6743.67,True
+OCQ,G,2011-2012,OCQ_G.XPT,Occupational Exposure Questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/OCQ_G.xpt,DOWNLOADED,1090640,1065.08,True

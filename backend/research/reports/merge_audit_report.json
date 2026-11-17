@@ -1,0 +1,20 @@
+{
+  "E": {
+    "total_demo": 10149,
+    "total_merged": 10149,
+    "examined_mec": 10149,
+    "spirometry_records": 7743
+  },
+  "F": {
+    "total_demo": 10537,
+    "total_merged": 10537,
+    "examined_mec": 10537,
+    "spirometry_records": 8195
+  },
+  "G": {
+    "total_demo": 9756,
+    "total_merged": 9756,
+    "examined_mec": 9756,
+    "spirometry_records": 7495
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "policies_comparison": {
+    "Static_Tier1_Only": {
+      "policy_name": "Static_Tier1_Only",
+      "n_evaluated": 2193,
+      "auroc": 0.6292306602723649,
+      "accuracy": 0.8618331053351573,
+      "sensitivity": 0.08627450980392157,
+      "f1_score": 0.12680115273775217,
+      "average_clinical_cost": 0.0,
+      "total_clinical_cost": 0.0,
+      "pef_maneuvers_performed": 0,
+      "pef_maneuvers_saved_pct": 100.0,
+      "singleton_resolution_rate_pct": 39.58048335613315,
+      "group_selection_frequency": {
+        "GROUP_SMOKING_QUANT": 0,
+        "GROUP_SYMPTOMS_RDQ": 0,
+        "GROUP_HISTORY_OCC_MCQ": 0,
+        "GROUP_BEDSIDE_PEF": 0
+      }
+    },
+    "Static_Full_Exhaustive": {
+      "policy_name": "Static_Full_Exhaustive",
+      "n_evaluated": 2193,
+      "auroc": 0.871066796171513,
+      "accuracy": 0.9028727770177839,
+      "sensitivity": 0.4117647058823529,
+      "f1_score": 0.49645390070921985,
+      "average_clinical_cost": 6.5,
+      "total_clinical_cost": 14254.5,
+      "pef_maneuvers_performed": 2193,
+      "pef_maneuvers_saved_pct": 0.0,
+      "singleton_resolution_rate_pct": 61.55950752393981,
+      "group_selection_frequency": {
+        "GROUP_SMOKING_QUANT": 2193,
+        "GROUP_SYMPTOMS_RDQ": 2193,
+        "GROUP_HISTORY_OCC_MCQ": 2193,
+        "GROUP_BEDSIDE_PEF": 2193
+      }
+    },
+    "Random_Acquisition_Policy": {
+      "policy_name": "Random_Acquisition_Policy",
+      "n_evaluated": 2193,
+      "auroc": 0.8117171533215969,
+      "accuracy": 0.9001367989056087,
+      "sensitivity": 0.3607843137254902,
+      "f1_score": 0.456575682382134,
+      "average_clinical_cost": 4.010031919744642,
+      "total_clinical_cost": 8794.0,
+      "pef_maneuvers_performed": 1410,
+      "pef_maneuvers_saved_pct": 35.70451436388508,
+      "singleton_resolution_rate_pct": 72.2298221614227,
+      "group_selection_frequency": {
+        "GROUP_SMOKING_QUANT": 1239,
+        "GROUP_SYMPTOMS_RDQ": 1194,
+        "GROUP_HISTORY_OCC_MCQ": 1426,
+        "GROUP_BEDSIDE_PEF": 1410
+      }
+    },
+    "AETHER_Adaptive_EVoI_Policy": {
+      "policy_name": "AETHER_Adaptive_EVoI_Policy",
+      "n_evaluated": 2193,
+      "auroc": 0.8271585827313382,
+      "accuracy": 0.9010487916096671,
+      "sensitivity": 0.39215686274509803,
+      "f1_score": 0.47961630695443647,
+      "average_clinical_cost": 4.442316461468308,
+      "total_clinical_cost": 9742.0,
+      "pef_maneuvers_performed": 1606,
+      "pef_maneuvers_saved_pct": 26.766985864113096,
+      "singleton_resolution_rate_pct": 68.67305061559507,
+      "group_selection_frequency": {
+        "GROUP_SMOKING_QUANT": 1232,
+        "GROUP_SYMPTOMS_RDQ": 1621,
+        "GROUP_HISTORY_OCC_MCQ": 1268,
+        "GROUP_BEDSIDE_PEF": 1606
+      }
+    }
+  },
+  "budget_curves": {
+    "Random_Acquisition": [
+      {
+        "budget_cap_units": 0.0,
+        "auroc": 0.6292,
+        "singleton_resolution_pct": 39.58
+      },
+      {
+        "budget_cap_units": 1.0,
+        "auroc": 0.6273,
+        "singleton_resolution_pct": 43.18
+      },
+      {
+        "budget_cap_units": 2.0,
+        "auroc": 0.638,
+        "singleton_resolution_pct": 45.96
+      },
+      {
+        "budget_cap_units": 3.0,
+        "auroc": 0.6413,
+        "singleton_resolution_pct": 47.1
+      },
+      {
+        "budget_cap_units": 4.0,
+        "auroc": 0.6878,
+        "singleton_resolution_pct": 51.48
+      },
+      {
+        "budget_cap_units": 5.0,
+        "auroc": 0.7366,
+        "singleton_resolution_pct": 56.68
+      },
+      {
+        "budget_cap_units": 6.5,
+        "auroc": 0.8117,
+        "singleton_resolution_pct": 72.23
+      }
+    ],
+    "AETHER_Adaptive_EVoI": [
+      {
+        "budget_cap_units": 0.0,
+        "auroc": 0.6292,
+        "singleton_resolution_pct": 39.58
+      },
+      {
+        "budget_cap_units": 1.0,
+        "auroc": 0.6316,
+        "singleton_resolution_pct": 37.94
+      },
+      {
+        "budget_cap_units": 2.0,
+        "auroc": 0.6523,
+        "singleton_resolution_pct": 41.95
+      },
+      {
+        "budget_cap_units": 3.0,
+        "auroc": 0.6523,
+        "singleton_resolution_pct": 41.95
+      },
+      {
+        "budget_cap_units": 4.0,
+        "auroc": 0.6523,
+        "singleton_resolution_pct": 41.95
+      },
+      {
+        "budget_cap_units": 5.0,
+        "auroc": 0.7026,
+        "singleton_resolution_pct": 51.89
+      },
+      {
+        "budget_cap_units": 6.5,
+        "auroc": 0.8272,
+        "singleton_resolution_pct": 68.67
+      }
+    ]
+  },
+  "acquisition_groups": {
+    "GROUP_SMOKING_QUANT": {
+      "id": "GROUP_SMOKING_QUANT",
+      "name": "Quantitative Smoking Exposure",
+      "features": [
+        "PACK_YEARS",
+        "SMD030",
+        "SMD650"
+      ],
+      "cost": 1.0,
+      "description": "Lifetime pack-years, age started regular smoking, and daily cigarette consumption (~45 sec)",
+      "tier": "Tier_2"
+    },
+    "GROUP_SYMPTOMS_RDQ": {
+      "id": "GROUP_SYMPTOMS_RDQ",
+      "name": "Respiratory Symptom Battery",
+      "features": [
+        "RDQ031",
+        "RDQ050",
+        "RDQ070",
+        "RDQ140"
+      ],
+      "cost": 1.0,
+      "description": "Chronic cough, chronic phlegm/sputum, wheezing, and exertional dyspnea (~60 sec)",
+      "tier": "Tier_2"
+    },
+    "GROUP_HISTORY_OCC_MCQ": {
+      "id": "GROUP_HISTORY_OCC_MCQ",
+      "name": "Medical History & Occupational Fumes",
+      "features": [
+        "OCD150",
+        "MCQ010",
+        "MCQ035",
+        "MCQ160G",
+        "MCQ160K"
+      ],
+      "cost": 1.0,
+      "description": "Prior doctor-diagnosed asthma, bronchitis, emphysema, and occupational workplace activity (~45 sec)",
+      "tier": "Tier_2"
+    },
+    "GROUP_BEDSIDE_PEF": {
+      "id": "GROUP_BEDSIDE_PEF",
+      "name": "Handheld Mechanical Peak Flow (PEF)",
+      "features": [
+        "PEF_L_MIN",
+        "PEF_HEIGHT_RATIO"
+      ],
+      "cost": 3.5,
+      "description": "Bedside pre-bronchodilator handheld peak flow meter check (~$15 device, 2.5 min maneuver)",
+      "tier": "Tier_3"
+    }
+  }
+}

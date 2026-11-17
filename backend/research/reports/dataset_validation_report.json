@@ -1,0 +1,19 @@
+{
+  "total_rows": 30442,
+  "total_unique_seqn": 30442,
+  "seqn_is_unique": true,
+  "seqn_has_no_nulls": true,
+  "rows_represent_all_demo": true,
+  "by_cycle": {
+    "F": 10537,
+    "E": 10149,
+    "G": 9756
+  },
+  "missing_spirometry_distinguishable": {
+    "not_examined_or_ineligible": 7009,
+    "spirometry_not_done": 1779,
+    "safety_exclusion": 1342,
+    "attempted_spirometry": 20312,
+    "missing_target_count": 11421
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "cohort_summary": {
+    "total_complete_case": 7101,
+    "train_fit": 3926,
+    "calibration_holdout": 982,
+    "prospective_test_cycle_g": 2193,
+    "target": "OBSTRUCTION_LLN (Pre-BD FEV1/FVC < Hankinson Table 6 LLN)"
+  },
+  "models_evaluation": {
+    "Tier_1_Only": {
+      "LogisticRegression": {
+        "model_name": "LogisticRegression",
+        "tier_name": "Tier_1_Only",
+        "features_count": 8,
+        "auroc": 0.7237681863250977,
+        "auroc_ci_95": [
+          0.6896980332263795,
+          0.7569344982035485
+        ],
+        "auprc": 0.2705588047140802,
+        "accuracy": 0.8796169630642955,
+        "sensitivity_recall": 0.1411764705882353,
+        "specificity": 0.9767801857585139,
+        "ppv_precision": 0.4444444444444444,
+        "npv": 0.8963068181818182,
+        "f1_score": 0.21428571428571427,
+        "confusion_matrix": {
+          "tn": 1893,
+          "fp": 45,
+          "fn": 219,
+          "tp": 36
+        },
+        "ece_raw": 0.29012885766866764,
+        "ece_calibrated": 0.014544344354896925,
+        "brier_score_raw": 0.18579632558535566,
+        "brier_score_calibrated": 0.09469701282275292
+      },
+      "RandomForest": {
+        "model_name": "RandomForest",
+        "tier_name": "Tier_1_Only",
+        "features_count": 8,
+        "auroc": 0.7238299034784192,
+        "auroc_ci_95": [
+          0.6908732224759337,
+          0.7548270798957829
+        ],
+        "auprc": 0.2705269877627213,
+        "accuracy": 0.8787049703602371,
+        "sensitivity_recall": 0.1568627450980392,
+        "specificity": 0.9736842105263158,
+        "ppv_precision": 0.43956043956043955,
+        "npv": 0.8977164605137964,
+        "f1_score": 0.23121387283236994,
+        "confusion_matrix": {
+          "tn": 1887,
+          "fp": 51,
+          "fn": 215,
+          "tp": 40
+        },
+        "ece_raw": 0.2410795367745692,
+        "ece_calibrated": 0.019029916879441975,
+        "brier_score_raw": 0.15906340588739284,
+        "brier_score_calibrated": 0.09510363170473757
+      },
+      "XGBoost": {
+        "model_name": "XGBoost",
+        "tier_name": "Tier_1_Only",
+        "features_count": 8,
+        "auroc": 0.7113387563487727,
+        "auroc_ci_95": [
+          0.6754615450364251,
+          0.746732283949591
+        ],
+        "auprc": 0.2674715906092987,
+        "accuracy": 0.8841769265845874,
+        "sensitivity_recall": 0.0392156862745098,
+        "specificity": 0.9953560371517027,
+        "ppv_precision": 0.5263157894736842,
+        "npv": 0.8873045078196872,
+        "f1_score": 0.072992700729927,
+        "confusion_matrix": {
+          "tn": 1929,
+          "fp": 9,
+          "fn": 245,
+          "tp": 10
+        },
+        "ece_raw": 0.24033052607015207,
+        "ece_calibrated": 0.020339938860155903,
+        "brier_score_raw": 0.16527168846833357,
+        "brier_score_calibrated": 0.09489807369590735
+      },
+      "CloudEnsemble": {
+        "model_name": "CloudEnsemble",
+        "tier_name": "Tier_1_Only",
+        "features_count": 8,
+        "auroc": 0.7131093304194743,
+        "auroc_ci_95": [
+          0.6791325034320425,
+          0.7464103112427292
+        ],
+        "auprc": 0.267162048260904,
+        "accuracy": 0.8796169630642955,
+        "sensitivity_recall": 0.1411764705882353,
+        "specificity": 0.9767801857585139,
+        "ppv_precision": 0.4444444444444444,
+        "npv": 0.8963068181818182,
+        "f1_score": 0.21428571428571427,
+        "confusion_matrix": {
+          "tn": 1893,
+          "fp": 45,
+          "fn": 219,
+          "tp": 36
+        },
+        "ece_raw": 0.24881008059283785,
+        "ece_calibrated": 0.019729632915830853,
+        "brier_score_raw": 0.16338857624187192,
+        "brier_score_calibrated": 0.09495988169178611
+      }
+    },
+    "Tier_1_Plus_Tier_2": {
+      "LogisticRegression": {
+        "model_name": "LogisticRegression",
+        "tier_name": "Tier_1_Plus_Tier_2",
+        "features_count": 20,
+        "auroc": 0.7688217082498634,
+        "auroc_ci_95": [
+          0.7367298309129261,
+          0.8004806369584859
+        ],
+        "auprc": 0.328572066453996,
+        "accuracy": 0.8846329229366166,
+        "sensitivity_recall": 0.054901960784313725,
+        "specificity": 0.9938080495356038,
+        "ppv_precision": 0.5384615384615384,
+        "npv": 0.8887863405629903,
+        "f1_score": 0.099644128113879,
+        "confusion_matrix": {
+          "tn": 1926,
+          "fp": 12,
+          "fn": 241,
+          "tp": 14
+        },
+        "ece_raw": 0.27958995816327353,
+        "ece_calibrated": 0.01238168010852306,
+        "brier_score_raw": 0.17667257817944457,
+        "brier_score_calibrated": 0.09009817656389627
+      },
+      "RandomForest": {
+        "model_name": "RandomForest",
+        "tier_name": "Tier_1_Plus_Tier_2",
+        "features_count": 20,
+        "auroc": 0.7575365750015177,
+        "auroc_ci_95": [
+          0.724327621261817,
+          0.7907822832350649
+        ],
+        "auprc": 0.30911977329836093,
+        "accuracy": 0.8828089375284998,
+        "sensitivity_recall": 0.1607843137254902,
+        "specificity": 0.97781217750258,
+        "ppv_precision": 0.4880952380952381,
+        "npv": 0.8985301090564248,
+        "f1_score": 0.24188790560471976,
+        "confusion_matrix": {
+          "tn": 1895,
+          "fp": 43,
+          "fn": 214,
+          "tp": 41
+        },
+        "ece_raw": 0.2694726245119054,
+        "ece_calibrated": 0.023429958250264317,
+        "brier_score_raw": 0.1644626202077117,
+        "brier_score_calibrated": 0.09347893421553934
+      },
+      "XGBoost": {
+        "model_name": "XGBoost",
+        "tier_name": "Tier_1_Plus_Tier_2",
+        "features_count": 20,
+        "auroc": 0.7440225419373115,
+        "auroc_ci_95": [
+          0.7108042703054711,
+          0.7763865810343878
+        ],
+        "auprc": 0.32564303184639215,
+        "accuracy": 0.8878248974008208,
+        "sensitivity_recall": 0.15294117647058825,
+        "specificity": 0.9845201238390093,
+        "ppv_precision": 0.5652173913043478,
+        "npv": 0.8983050847457628,
+        "f1_score": 0.24074074074074073,
+        "confusion_matrix": {
+          "tn": 1908,
+          "fp": 30,
+          "fn": 216,
+          "tp": 39
+        },
+        "ece_raw": 0.22529423193954273,
+        "ece_calibrated": 0.01772748520421098,
+        "brier_score_raw": 0.1513342205214447,
+        "brier_score_calibrated": 0.09097071020895067
+      },
+      "CloudEnsemble": {
+        "model_name": "CloudEnsemble",
+        "tier_name": "Tier_1_Plus_Tier_2",
+        "features_count": 20,
+        "auroc": 0.7699265464699813,
+        "auroc_ci_95": [
+          0.7408285473282801,
+          0.8006093055079234
+        ],
+        "auprc": 0.33830212560067024,
+        "accuracy": 0.8878248974008208,
+        "sensitivity_recall": 0.12156862745098039,
+        "specificity": 0.9886480908152735,
+        "ppv_precision": 0.5849056603773585,
+        "npv": 0.8953271028037383,
+        "f1_score": 0.2012987012987013,
+        "confusion_matrix": {
+          "tn": 1916,
+          "fp": 22,
+          "fn": 224,
+          "tp": 31
+        },
+        "ece_raw": 0.24905983834790865,
+        "ece_calibrated": 0.014109409835592952,
+        "brier_score_raw": 0.15557599347269063,
+        "brier_score_calibrated": 0.08921899274803274
+      }
+    },
+    "Tier_1_2_3_Full": {
+      "LogisticRegression": {
+        "model_name": "LogisticRegression",
+        "tier_name": "Tier_1_2_3_Full",
+        "features_count": 22,
+        "auroc": 0.8730397215645804,
+        "auroc_ci_95": [
+          0.8490348434987551,
+          0.8963463117759644
+        ],
+        "auprc": 0.5465804319626382,
+        "accuracy": 0.9060647514819882,
+        "sensitivity_recall": 0.21176470588235294,
+        "specificity": 0.9974200206398349,
+        "ppv_precision": 0.9152542372881356,
+        "npv": 0.9058106841611996,
+        "f1_score": 0.34394904458598724,
+        "confusion_matrix": {
+          "tn": 1933,
+          "fp": 5,
+          "fn": 201,
+          "tp": 54
+        },
+        "ece_raw": 0.21529237142369945,
+        "ece_calibrated": 0.022854432570729135,
+        "brier_score_raw": 0.13503114441370262,
+        "brier_score_calibrated": 0.07079779856603811
+      },
+      "RandomForest": {
+        "model_name": "RandomForest",
+        "tier_name": "Tier_1_2_3_Full",
+        "features_count": 22,
+        "auroc": 0.8555353204233189,
+        "auroc_ci_95": [
+          0.8307554638940577,
+          0.8793046928916494
+        ],
+        "auprc": 0.4944670876657484,
+        "accuracy": 0.9005927952576379,
+        "sensitivity_recall": 0.3568627450980392,
+        "specificity": 0.9721362229102167,
+        "ppv_precision": 0.6275862068965518,
+        "npv": 0.919921875,
+        "f1_score": 0.455,
+        "confusion_matrix": {
+          "tn": 1884,
+          "fp": 54,
+          "fn": 164,
+          "tp": 91
+        },
+        "ece_raw": 0.23648322321602858,
+        "ece_calibrated": 0.018427440997703173,
+        "brier_score_raw": 0.13508425356099935,
+        "brier_score_calibrated": 0.07514200894236228
+      },
+      "XGBoost": {
+        "model_name": "XGBoost",
+        "tier_name": "Tier_1_2_3_Full",
+        "features_count": 22,
+        "auroc": 0.8557751067403225,
+        "auroc_ci_95": [
+          0.8304023975992988,
+          0.8773648992148233
+        ],
+        "auprc": 0.4801282032407149,
+        "accuracy": 0.8964888280893752,
+        "sensitivity_recall": 0.3843137254901961,
+        "specificity": 0.9638802889576883,
+        "ppv_precision": 0.5833333333333334,
+        "npv": 0.9224691358024691,
+        "f1_score": 0.46335697399527187,
+        "confusion_matrix": {
+          "tn": 1868,
+          "fp": 70,
+          "fn": 157,
+          "tp": 98
+        },
+        "ece_raw": 0.17401621581513455,
+        "ece_calibrated": 0.016131375068068853,
+        "brier_score_raw": 0.12181680407156907,
+        "brier_score_calibrated": 0.07651450202188667
+      },
+      "CloudEnsemble": {
+        "model_name": "CloudEnsemble",
+        "tier_name": "Tier_1_2_3_Full",
+        "features_count": 22,
+        "auroc": 0.871066796171513,
+        "auroc_ci_95": [
+          0.8471362370878619,
+          0.8915564255444067
+        ],
+        "auprc": 0.5122634582819998,
+        "accuracy": 0.9028727770177839,
+        "sensitivity_recall": 0.4117647058823529,
+        "specificity": 0.9674922600619195,
+        "ppv_precision": 0.625,
+        "npv": 0.9259259259259259,
+        "f1_score": 0.49645390070921985,
+        "confusion_matrix": {
+          "tn": 1875,
+          "fp": 63,
+          "fn": 150,
+          "tp": 105
+        },
+        "ece_raw": 0.20160740318615683,
+        "ece_calibrated": 0.013803593118199705,
+        "brier_score_raw": 0.12231466394364766,
+        "brier_score_calibrated": 0.07325452727774956
+      }
+    }
+  },
+  "subgroup_fairness": {
+    "Age_40_to_59": {
+      "n_participants": 1328,
+      "prevalence_lln": 0.09864457831325302,
+      "auroc": 0.8569483505200661,
+      "accuracy": 0.9096385542168675,
+      "sensitivity": 0.3435114503816794,
+      "specificity": 0.9715956558061821
+    },
+    "Age_60_to_79": {
+      "n_participants": 865,
+      "prevalence_lln": 0.14335260115606938,
+      "auroc": 0.8851976405032432,
+      "accuracy": 0.892485549132948,
+      "sensitivity": 0.4838709677419355,
+      "specificity": 0.9608636977058029
+    },
+    "Male": {
+      "n_participants": 1058,
+      "prevalence_lln": 0.14272211720226843,
+      "auroc": 0.8789620099739334,
+      "accuracy": 0.8856332703213611,
+      "sensitivity": 0.40397350993377484,
+      "specificity": 0.9658213891951488
+    },
+    "Female": {
+      "n_participants": 1135,
+      "prevalence_lln": 0.09162995594713656,
+      "auroc": 0.8571914869805268,
+      "accuracy": 0.918942731277533,
+      "sensitivity": 0.4230769230769231,
+      "specificity": 0.9689621726479146
+    },
+    "Never_Smoker": {
+      "n_participants": 1175,
+      "prevalence_lln": 0.05106382978723404,
+      "auroc": 0.8223318385650225,
+      "accuracy": 0.9463829787234043,
+      "sensitivity": 0.23333333333333334,
+      "specificity": 0.9847533632286996
+    },
+    "Former_Smoker": {
+      "n_participants": 588,
+      "prevalence_lln": 0.14285714285714285,
+      "auroc": 0.8695082199546484,
+      "accuracy": 0.8826530612244898,
+      "sensitivity": 0.35714285714285715,
+      "specificity": 0.9702380952380952
+    },
+    "Current_Smoker": {
+      "n_participants": 427,
+      "prevalence_lln": 0.25995316159250587,
+      "auroc": 0.8325208119511918,
+      "accuracy": 0.810304449648712,
+      "sensitivity": 0.5495495495495496,
+      "specificity": 0.9018987341772152
+    },
+    "Fixed_Ratio_Comparison": {
+      "auroc_against_fixed_070": 0.8268802906259236,
+      "lln_positive_count": 255,
+      "fixed_070_positive_count": 381,
+      "discordance_fp_elderly_overdiagnosis": 81
+    }
+  },
+  "top_shap_features": [
+    {
+      "feature": "PEF_HEIGHT_RATIO",
+      "mean_abs_shap": 0.8335393667221069
+    },
+    {
+      "feature": "BMXHT",
+      "mean_abs_shap": 0.4937484860420227
+    },
+    {
+      "feature": "BMXBMI",
+      "mean_abs_shap": 0.4331662952899933
+    },
+    {
+      "feature": "PEF_L_MIN",
+      "mean_abs_shap": 0.33245739340782166
+    },
+    {
+      "feature": "RIDAGEYR",
+      "mean_abs_shap": 0.24300026893615723
+    },
+    {
+      "feature": "PACK_YEARS",
+      "mean_abs_shap": 0.23661765456199646
+    },
+    {
+      "feature": "RIAGENDR_1.0",
+      "mean_abs_shap": 0.21548111736774445
+    },
+    {
+      "feature": "RIDRETH1_5.0",
+      "mean_abs_shap": 0.14594563841819763
+    },
+    {
+      "feature": "BMXWT",
+      "mean_abs_shap": 0.12388667464256287
+    },
+    {
+      "feature": "RIDRETH1_4.0",
+      "mean_abs_shap": 0.08549748361110687
+    },
+    {
+      "feature": "SMD030",
+      "mean_abs_shap": 0.08150052279233932
+    },
+    {
+      "feature": "RIDRETH1_3.0",
+      "mean_abs_shap": 0.05628393217921257
+    },
+    {
+      "feature": "SMOKING_STATUS_Current",
+      "mean_abs_shap": 0.05535638704895973
+    },
+    {
+      "feature": "MCQ010_1.0",
+      "mean_abs_shap": 0.04523931071162224
+    },
+    {
+      "feature": "RIAGENDR_2.0",
+      "mean_abs_shap": 0.03399548679590225
+    }
+  ]
+}
